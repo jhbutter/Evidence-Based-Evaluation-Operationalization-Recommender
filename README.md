@@ -7,5 +7,3 @@ The static interface packaged on 2026-11-17, with colours inspired by AI4Design 
 Open index.html locally or serve the repository root with GitHub Pages.
 
 Expanded paper evidence uses cards with a stage-coloured header, paper year/title, reported measure and source page.
-
-The academic visual refinement uses a white background, slate text and muted stage colours. Eleven key interface regions were checked to retain their original geometry.
