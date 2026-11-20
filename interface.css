@@ -1,0 +1,128 @@
+:root {
+  --ink:#263b42;
+  --muted:#586a70;
+  --line:#dce7e7;
+  --wash:#f4f8f8;
+  --accent:#287461;
+}
+body { background:var(--wash) }
+.site-header {
+  min-height:82px;
+  padding:0 clamp(20px,3vw,48px);
+  background:linear-gradient(100deg,#ccf0f5,#e3f4ef);
+  border-bottom:1px solid #bcdedc;
+}
+.brand { max-width:470px;font-size:18px;line-height:1.35 }
+.nav { gap:28px }
+.nav a { padding-block:27px 24px }
+.nav a.active { border-color:var(--accent) }
+.nav a:hover { color:var(--accent) }
+.layout { max-width:1500px;margin:auto;grid-template-columns:260px minmax(0,1fr) }
+.sidebar { padding:32px 20px;border-color:var(--line) }
+.sidebar h2 { font-size:12px;letter-spacing:.04em;color:var(--muted) }
+.step-nav { counter-reset:stage;margin-bottom:28px }
+.step-nav li { counter-increment:stage;margin-bottom:9px }
+.step-nav button {
+  border:1px solid transparent;border-radius:8px;padding:14px 10px;
+  transition:background-color .15s,border-color .15s;
+}
+.step-nav button.active { background:white;border-color:#a4cfc3;box-shadow:0 2px 8px #263b4206 }
+.step-nav button:not(:disabled):hover { background:#e3f4ef }
+.step-nav button:disabled { opacity:.65 }
+.step-nav strong { display:flex;align-items:center;gap:10px;font-size:13px }
+.step-nav span { margin-left:36px;font-size:11px }
+.step-nav .dot {
+  display:inline-flex;align-items:center;justify-content:center;flex:none;
+  width:26px;height:26px;margin:0;border-radius:6px;
+  background:#e3f4ef;color:#245c4d;font:12px/1 "Segoe UI",Arial,sans-serif;
+}
+.step-nav .dot::after { content:counter(stage) }
+.step-nav li:nth-child(2) .dot { background:#feeae3;color:#8c4a30 }
+.step-nav li:nth-child(3) .dot { background:#ebeef6;color:#4e5d85 }
+.sidebar-section { padding:22px 10px }
+.stats { gap:20px 12px }
+.stats b { font-size:25px;font-weight:600;font-variant-numeric:tabular-nums }
+.stats span { display:block;margin-top:4px;font-size:11px }
+.hero { background:none;border:0;padding:36px 40px 24px }
+h1 { font-size:clamp(28px,2.65vw,40px);line-height:1.15;letter-spacing:-.035em;max-width:740px }
+.hero p { max-width:640px;font-size:14px;line-height:1.65 }
+.panel {
+  --stage:#66c3a6;
+  margin:0 40px 28px;padding:28px 30px 30px;background:white;
+  border:1px solid var(--line);border-top:4px solid var(--stage);border-radius:9px;
+}
+.panel[data-layer="2"] { --stage:#fb8d62 }
+.panel[data-layer="3"] { --stage:#8e9fcb }
+.panel h2 { font-size:23px }
+.panel .lead { font-size:14px;margin-bottom:25px }
+.field-grid { gap:20px;max-width:none }
+.field select,.filters select,.filters input {
+  border-color:#c5d3d5;border-radius:6px;min-height:46px;padding:10px 12px;background:#fff;
+}
+.field select:hover,.filters select:hover { border-color:var(--accent) }
+.field label { font-size:13px }
+.context-help { line-height:1.5 }
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible {
+  outline:3px solid #287461;outline-offset:3px;
+}
+.selected { gap:8px;margin-bottom:24px }
+.selected span { background:#f0f4f4;border:1px solid var(--line);border-radius:5px;padding:7px 11px }
+.results { margin-top:28px;border-color:var(--line) }
+.results-header { padding-block:20px 14px;gap:12px }
+.results-header h3 { font-size:17px }
+.results-header small { font-size:11px }
+.result {
+  grid-template-columns:28px minmax(0,1fr) auto;
+  gap:8px 12px;padding:18px 0;align-items:center;
+}
+.rank { font-size:16px;color:#75868b;font-variant-numeric:tabular-nums }
+.result button { font-size:15px;color:#245d50;line-height:1.45 }
+.result button:hover { color:#183f35;text-decoration:underline;text-underline-offset:3px }
+.result .count { color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap }
+.result details { grid-column:2/-1 }
+.result summary { width:fit-content;color:#586a70;font-size:12px;padding:5px 0 }
+.excerpt { border-color:var(--stage);border-radius:0 5px 5px 0;padding:15px;line-height:1.65 }
+.excerpt p+p { margin-top:15px;padding-top:13px;border-top:1px solid var(--line) }
+.empty { margin-top:22px;padding:18px;background:#f4f8f8;border-radius:6px;font-size:13px }
+.footer { margin:0 40px;padding:18px 0 24px;font-size:11px;line-height:1.6 }
+.corpus-main,.method-main { margin:auto;padding:36px 40px }
+.summary-grid { border-radius:8px;overflow:hidden }
+.summary-grid div { padding:20px }
+.profile { gap:20px }
+.profile>div { padding:20px;background:white;border:1px solid var(--line);border-radius:8px }
+.profile h3 { font-size:16px }
+.bar { background:#e9eeee;border-radius:3px;overflow:hidden }
+.profile>div:nth-child(2) .bar i { background:#8e9fcb }
+.table-wrap { background:white;border:1px solid var(--line);border-radius:8px }
+thead { background:#eaf3f3 }
+tbody tr:hover { background:#f5f9f8 }
+.method-main section { padding:24px;background:white;border:1px solid var(--line);border-radius:8px;margin:20px 0;overflow:auto }
+.method-main h2 { margin-top:0;font-size:21px }
+.chain span { border-radius:5px;background:#e3f4ef }
+.chain span:nth-of-type(3) { background:#feeae3 }
+.chain span:nth-of-type(4) { background:#ebeef6 }
+@media(max-width:1050px) {
+  .layout { grid-template-columns:225px minmax(0,1fr) }
+  .hero { padding-inline:24px }.panel { margin-inline:24px;padding:23px }.footer { margin-inline:24px }
+  .result { grid-template-columns:25px minmax(0,1fr) }
+  .result .count,.result details { grid-column:2 }
+  .results-header { flex-wrap:wrap }
+}
+@media(max-width:700px) {
+  .site-header { padding:16px 20px 0;gap:12px;flex-wrap:wrap }
+  .brand { font-size:16px;max-width:400px }
+  .nav { width:100%;gap:24px }.nav a { font-size:13px;padding:8px 0 12px }
+  .layout { display:block }.sidebar { padding:16px 12px 12px }
+  .sidebar>h2 { margin:0 8px 10px }.step-nav { gap:6px;margin:0 }
+  .step-nav li { margin:0 }.step-nav button { height:100%;padding:9px 6px }
+  .step-nav strong { display:block;font-size:11px;line-height:1.4 }
+  .step-nav .dot { display:flex;margin-bottom:5px;width:22px;height:22px }
+  .hero { padding:22px 20px 20px }h1 { font-size:29px }
+  .panel { margin:0 12px 20px;padding:22px 16px }.panel h2 { font-size:21px }
+  .field-grid,.filters { grid-template-columns:minmax(0,1fr) }
+  .footer { margin:0 20px }.corpus-main,.method-main { padding:24px 20px }
+  .profile>div+div { margin-top:16px }.bar-row { grid-template-columns:minmax(100px,1fr) 1fr 30px }
+  .result { grid-template-columns:22px minmax(0,1fr) }.result .count { white-space:normal }
+  .method-main section { padding:16px }.summary-grid div { padding:14px }
+}
+@media(prefers-reduced-motion:reduce) { .step-nav button { transition:none } }
