@@ -13,3 +13,5 @@ Current stage colours are green (#66C3A6), cyan-blue (#45C4DB) and periwinkle (#
 Current palette restored to the original 2026-11-17 site: cyan accents, with green (#69BCA6), blue (#8D9FCB) and pink (#DC94B6) for the three stages and their evidence cards.
 
 Low-contrast CSS contour textures decorate the header and background corners. They scale down on mobile and are hidden when printing.
+
+The background now uses an original pale cyan interwoven wave pattern in background-waves.svg, repeated behind the content.

@@ -29,38 +29,23 @@
       .result:has(details[open]) details { grid-column:1/-1 }
       .evidence-card-head,.evidence-card-body { padding:14px }
     }
-      .site-header {
-      background:
-        repeating-radial-gradient(ellipse 900px 360px at 105% -120px,transparent 0 27px,rgba(67,181,195,.12) 28px 29px,transparent 30px 54px),
-        var(--mist);
+  
+    .site-header { background:var(--mist) }
+    .main {
+      background-image:url('background-waves.svg');
+      background-size:1500px 1000px;
+      background-position:center top;
+      background-repeat:repeat-y;
     }
-    .main { position:relative;isolation:isolate }
-    .main::before,.main::after {
-      content:"";position:absolute;pointer-events:none;z-index:-1;
-      background-repeat:no-repeat;
-    }
-    .main::before {
-      top:0;right:0;width:min(64%,720px);height:600px;
-      background-image:
-        repeating-radial-gradient(ellipse at 125% 8%,transparent 0 25px,rgba(67,181,195,.15) 26px 27px,transparent 28px 48px),
-        repeating-radial-gradient(ellipse at 110% -10%,transparent 0 47px,rgba(141,159,203,.09) 48px 49px,transparent 50px 82px);
-      mask-image:linear-gradient(to left,black,transparent 95%),linear-gradient(to bottom,black 10%,transparent 95%);
-      mask-composite:intersect;
-    }
-    .main::after {
-      bottom:0;left:0;width:min(50%,600px);height:400px;
-      background-image:repeating-radial-gradient(ellipse at -30% 120%,transparent 0 30px,rgba(105,188,166,.11) 31px 32px,transparent 33px 62px);
-      mask-image:linear-gradient(to right,black,transparent 95%),linear-gradient(to top,black,transparent 95%);
-      mask-composite:intersect;
-    }
-    .hero { background:transparent }
-    .panel,.corpus-main,.method-main { background:rgba(255,255,255,.65) }
-    .evidence-card { background:white }
+    .hero { background:rgba(255,255,255,.94) }
+    .panel,.corpus-main,.method-main { background:rgba(255,255,255,.48) }
+    .evidence-card,.field select,.filters select,.filters input { background:white }
+    .results .excerpt { background:transparent }
     @media(max-width:700px) {
-      .main::before { width:65%;height:360px;opacity:.65 }
-      .main::after { height:240px;opacity:.65 }
+      .main { background-size:1000px auto }
+      .panel,.corpus-main,.method-main { background:rgba(255,255,255,.7) }
     }
-    @media print { .main::before,.main::after { display:none } }
+    @media print { .main { background-image:none } }
   </style>
 </head>
 <body>
