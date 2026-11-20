@@ -5,3 +5,5 @@
 The static interface packaged on 2026-11-17, with colours inspired by AI4Design Survey (https://idvxlab.com/ai4design/). The original layout, dropdown inputs and result lists are retained. The bundled review dataset is dated 2026-11-13.
 
 Open index.html locally or serve the repository root with GitHub Pages.
+
+Expanded paper evidence uses cards with a stage-coloured header, paper year/title, reported measure and source page.
