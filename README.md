@@ -19,3 +19,5 @@ The background now uses an original pale cyan interwoven wave pattern in backgro
 The simplified background uses twelve non-crossing lines, fading toward the reading area and placed once at the right edge.
 
 Current background is a soft blue/green/yellow/pink gradient fading into cool grey-white. The previous wave asset is no longer referenced. Page content and eleven key layout regions were verified unchanged.
+
+Sidebar and recommender panel backgrounds are transparent so the page gradient continues through both regions without rectangular white overlays.
