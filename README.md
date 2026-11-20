@@ -17,3 +17,5 @@ Low-contrast CSS contour textures decorate the header and background corners. Th
 The background now uses an original pale cyan interwoven wave pattern in background-waves.svg, repeated behind the content.
 
 The simplified background uses twelve non-crossing lines, fading toward the reading area and placed once at the right edge.
+
+Current background is a soft blue/green/yellow/pink gradient fading into cool grey-white. The previous wave asset is no longer referenced. Page content and eleven key layout regions were verified unchanged.

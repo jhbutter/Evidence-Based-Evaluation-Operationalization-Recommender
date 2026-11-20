@@ -30,22 +30,25 @@
       .evidence-card-head,.evidence-card-body { padding:14px }
     }
   
-    .site-header { background:var(--mist) }
-    .main {
-      background-image:url('background-waves.svg?v=sparse');
-      background-size:1500px 1000px;
-      background-position:right top;
-      background-repeat:no-repeat;
+    body {
+      background:
+        radial-gradient(ellipse 480px 230px at 4% 0,rgba(145,206,228,.62),transparent 80%),
+        radial-gradient(ellipse 440px 200px at 28% 0,rgba(183,222,187,.48),transparent 80%),
+        radial-gradient(ellipse 420px 190px at 48% 0,rgba(246,235,169,.45),transparent 80%),
+        radial-gradient(ellipse 480px 210px at 69% 0,rgba(235,191,198,.42),transparent 80%),
+        linear-gradient(165deg,#F5F6F7 12%,#F0F3F8 60%,#E9EFF7 100%);
     }
-    .hero { background:rgba(255,255,255,.94) }
-    .panel,.corpus-main,.method-main { background:rgba(255,255,255,.48) }
+    .site-header { background:rgba(255,255,255,.18) }
+    .sidebar { background:rgba(255,255,255,.42) }
+    .main { background:transparent }
+    .hero { background:rgba(255,255,255,.16) }
+    .panel,.corpus-main,.method-main { background:rgba(255,255,255,.66) }
+    .footer { background:rgba(255,255,255,.30) }
     .evidence-card,.field select,.filters select,.filters input { background:white }
     .results .excerpt { background:transparent }
-    @media(max-width:700px) {
-      .main { background-size:1000px auto }
-      .panel,.corpus-main,.method-main { background:rgba(255,255,255,.7) }
+    @media print {
+      body,.site-header,.sidebar,.hero,.panel,.corpus-main,.method-main,.footer { background:white }
     }
-    @media print { .main { background-image:none } }
   </style>
 </head>
 <body>
