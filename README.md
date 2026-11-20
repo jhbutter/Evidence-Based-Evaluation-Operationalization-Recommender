@@ -15,3 +15,5 @@ Current palette restored to the original 2026-11-17 site: cyan accents, with gre
 Low-contrast CSS contour textures decorate the header and background corners. They scale down on mobile and are hidden when printing.
 
 The background now uses an original pale cyan interwoven wave pattern in background-waves.svg, repeated behind the content.
+
+The simplified background uses twelve non-crossing lines, fading toward the reading area and placed once at the right edge.
